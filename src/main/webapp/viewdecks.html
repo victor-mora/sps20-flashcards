@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>view all decks</title>
+    </head>
+<script src="script.js"></script> 
+<body onload="loadDeckDropdown()">
+<body>
+
+<iframe src="./NavBarFrame.html" width="100%" height="75" frameborder="0" scrolling="no"></iframe>
+
+<h1>My Decks</h1>
+
+<!--
+<p><a href="viewcards.html">View all cards in this deck</a></p>
+
+<p><a href="createdeck.html">Create New Deck</a></p>
+
+<p><a href="createcard.html">Create New Card</a></p>
+-->
+<select id="deckSelect">
+    <!--
+      <option value="en">English</option>
+      <option value="zh">Chinese</option>
+      <option value="es">Spanish</option>
+      <option value="hi">Hindi</option>
+      <option value="ar">Arabic</option>
+      -->
+    </select>
+
+<!--
+      on click should set session deck id to selected deckname and
+      forward to viewcards/createcard
+      -->
+    <button onclick="chooseDeckAndMove()">Choose this deck</button>
+    
+    <div id="em-container"></div>
+
+</body>
+</html>

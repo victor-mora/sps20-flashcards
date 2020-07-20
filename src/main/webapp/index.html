@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+        <title>Login Screen</title>
+    </head>
+    <script src="script.js"></script> 
+    <body onload="getErr()">
+    <body>
+        <iframe src="./LoginSignUpFrame.html" width="100%" height="75" frameborder="0" scrolling="no"></iframe>
+        
+        <h1>Log In</h1>
+
+        <form action="/login" method="POST">
+            <label for="usnm"><b><span> Username </span></b></label>
+            <input type="text" name="usnm" required>
+            <br/><br/>
+            
+            <label for="psw"><b><span> Password </span></b></label>
+            <input type="password" name="psw" required>
+            <br/><br/>
+
+            <input type="submit" value="Log In"/> <!--Clicking this should trigger token creation.-->
+        </form>
+
+        <div id="em-container"></div>
+
+        <h2>Don't Have An Account?</h2>
+        <form action="./signup.html">
+            <input type="submit" value="Sign Up" />
+        </form>
+
+    </body>
+</html>

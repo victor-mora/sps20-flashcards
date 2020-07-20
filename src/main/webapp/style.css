@@ -1,0 +1,46 @@
+html * {
+   font-family: "Public Sans", sans-serif;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+b {
+    text-align: center; 
+}
+b span { 
+    background-color: #38b6ff; 
+    padding: 12px 32px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #38b6ff;
+    border: none;
+    padding: 22px 62px;
+    text-decoration: none;
+    cursor: pointer;
+    /* float: right; */
+}
+
+input[type=text] {
+    border: 2px solid #38b6ff;
+    padding: 11px 20px;
+    width: 70%;
+}
+input[type=password] {
+    border: 2px solid #38b6ff;
+    padding: 11px 20px;
+    width: 70%;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+/* 
+.alignRight {
+    float: right;
+} */

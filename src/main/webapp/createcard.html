@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Create Card Page</title>
+    </head>
+<script src="script.js"></script> 
+<body onload="cardAddMessage()">
+<body>
+
+<iframe src="./NavBarFrame.html" width="100%" height="75" frameborder="0" scrolling="no"></iframe>
+
+<h1>Create Card</h1>
+
+<!--
+<p><a href="viewdecks.html">Main Menu</a></p>
+-->
+<p>Change deck to add card to:</p>
+<div id="em-container"></div>
+
+<select id="deckSelect">
+    <option value="" selected disabled hidden> 
+          Select an Option 
+      </option> 
+
+    <!--
+      <option value="en">English</option>
+      <option value="zh">Chinese</option>
+      <option value="es">Spanish</option>
+      <option value="hi">Hindi</option>
+      <option value="ar">Arabic</option>
+      -->
+    </select>
+    <button onclick="chooseDeck()">Change to this deck</button>
+
+<br/><br/>
+
+<label for="frnt"><b>Card Front:</b></label>
+<textarea rows="4" cols="50" name="frnt" form="cardForm"></textarea>
+ <br/><br/>
+<label for="bck"><b>Card Back:</b></label>
+<textarea rows="4" cols="50" name="bck" form="cardForm"></textarea>
+
+<form action="/createcard" method="POST" id="cardForm">
+<!--
+      <label for="frnt"><b>Card Front:</b></label>
+      
+      
+      <input type="text" placeholder="" name="frnt" required>
+
+      <br/><br/>
+      
+      
+      <input type="password" placeholder="" name="bck" required>
+        
+        <br/><br/>
+        -->
+        <input type="submit" />
+</form>
+
+
+
+<div id="ea-container"></div>
+
+</body>
+</html>
